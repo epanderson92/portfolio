@@ -1,17 +1,30 @@
 #card-1{
 	width: 400px;
 	margin-left: 15px;
-	margin-right: 
+	display: inline-block;
 }
 
 #card-2{
 	width: 400px;
 	float:right;
-	margin-bottom: 10000px;
-	z-index: 2
+	margin-right: 15px;
+
+	
 }
 
 #card-3 {
 	width:400px;
 	margin-left:15px;
+	display: inline-block;
+}
+
+#card-4 {
+	width: 400px;
+	float:right;
+	margin-right: 15px;
+	justify-content: flex-end;
+}
+
+#speed{
+	animation-duration:5s;
 }
