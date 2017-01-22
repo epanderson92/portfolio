@@ -28,3 +28,11 @@
 #speed{
 	animation-duration:5s;
 }
+
+.about-wrapper{
+	align-self:center;
+}
+
+ #me-text {
+ 	font-size: 165%;
+ }
