@@ -1,3 +1,11 @@
+nav{
+	position: fixed;
+}
+
+#my-name {
+ 	padding-left: 15px;
+ }
+
 #card-1{
 	width: 400px;
 	margin-left: 15px;
@@ -36,3 +44,4 @@
  #me-text {
  	font-size: 165%;
  }
+
