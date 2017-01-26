@@ -1,83 +1,90 @@
 <DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Evan Anderson</title>
-	 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+    <html lang="en">
 
-	<body>
-	<!-- nav bar -->
-		<nav>
-	    <div class="nav-wrapper">
-	      <a href="#" class="brand-logo" id="my-name">Evan Anderson</a>
-	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	        <li><a href="about.html">About Me</a></li>
-	        <li><a href="index.html">Portfolio</a></li>
-	        <li><a href="contact.html">Contact Me</a></li>
-	      </ul>
-	    </div>
-	  </nav>
+    <head>
+        <meta charset="UTF-8">
+        <title>Evan Anderson</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/materialize.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
 
-    <!-- pic -->
-
-    <div class="about-wrapper">
-      <img id="about-pic" src="assets/images/evan.jpg" height="250px" width="200px">
-    </div>
-
-
-    <!-- about me text -->
-      
-    <div class="container">
-      <p id="me-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-
-      <br>
-
-      <p id="me-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-
-      <br>
-
-      <p id="me-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    </div>
-
-    <!-- footer -->
-      <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+    <body onload="scrollDelay()">
+        <!-- nav bar -->
+        <nav id="port-nav">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo" id="my-name">Evan Anderson</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
                 </ul>
-              </div>
             </div>
-          </div>
-          <div class="footer-copyright">
+        </nav>
+        <!-- opening curtan/profile pic -->
+        <div id="top"></div>
+        <img id="about-pic" src="assets/images/evan.jpg">
+        <div class="bottom">
+        </div>
+        <a class="btn-floating btn-large waves-effect waves-light red" id="enter"><i class="material-icons">add</i></a>
+        <!-- about me text -->
+        <div class="container hiden-div">
+            <p class="me-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <br>
+            <p class="me-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <br>
+            <p class="me-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+        <!-- footer -->
+        <footer class="page-footer">
             <div class="container">
-            © 2017 Copyright Evan Anderson
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Footer Content</h5>
+                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2017 Copyright Evan Anderson
+                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
+            </div>
         </footer>
+        <!--============================================================================================-->
+        <!-- jquery/js link -->
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        <script>
+        
+            
+        var scroll = function(){
+
+
+               $("body").addClass("scroll");
+                document.getElementById("top").style.display = "none";
+            }
+
+            var scrollDelay = function(){
+              setTimeout(scroll, 6500);
+
+            };
+            
             
         
-<!--============================================================================================-->
-	
-	<!-- jquery/js link -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        </script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+    </body>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script> 
-
-	<script type="text/javascript" src="assets/js/app.js"></script>
-	</body>
-
-</html>
+    </html>

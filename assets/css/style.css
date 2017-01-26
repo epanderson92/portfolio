@@ -1,48 +1,177 @@
-nav{
-	position: fixed;
-	background-color: 454A4F;
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.scroll {
+ height: auto !important;
+ overflow: auto !important;
+}
+
+#top {
+    width: 100vw;
+    height: 50vh;
+    background-color: 454A4F;
+    animation: topdiv 7s forwards;
+    z-index: 998;
+    margin-bottom: 0 !important;
+}
+
+#enter {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    animation: button 3s forwards;
+}
+
+.bottom {
+    width: 100vw;
+    height: 50vh;
+    background-color:  454A4F;
+    animation: bottomdiv 7s forwards;
+    top: 50%;
+    z-index: 998;
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background-color: 454A4F;
+    z-index: -1;
+    /*opacity: 1;*/
+}
+
+#about-pic {
+    width: 250px;
+    height: 250px;
+    background: red;
+    position: absolute;
+    -webkit-animation: mymove 7s forwards;
+    /* Safari 4.0 - 8.0 */
+    animation: mymove 7s forwards;
+    border-radius: 100%;
+    top: 25%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    position: fixed;
+}
+
+.me-text {
+    font-size: 165%;
+    animation: text 2s forwards 6.6s;
+    color: white;
+    padding-bottom: 20px;
+
+
+}
+
+.hiden-div{
+	margin-top: 15vh;
+	min-height: 75vh;
+}
+
+.page-footer{
+	background-color:  454A4F;
 }
 
 #my-name {
- 	padding-left: 15px;
- }
-
-#card-1{
-	width: 400px;
-	margin-left: 15px;
-	display: inline-block;
+    padding-left: 15px;
 }
 
-#card-2{
-	width: 400px;
-	float:right;
-	margin-right: 15px;
+#card-1 {
+    width: 400px;
+    margin-left: 15px;
+    display: inline-block;
+    margin-top: 80px;
+}
 
-	
+#card-2 {
+    width: 400px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 80px;
 }
 
 #card-3 {
-	width:400px;
-	margin-left:15px;
-	display: inline-block;
+    width: 400px;
+    margin-left: 15px;
+    display: inline-block;
 }
 
 #card-4 {
-	width: 400px;
-	float:right;
-	margin-right: 15px;
-	justify-content: flex-end;
+    width: 400px;
+    float: right;
+    margin-right: 15px;
+    justify-content: flex-end;
+    position: relative;
+    float: right;
+    margin-top: 0;
 }
 
-#speed{
-	animation-duration:5s;
+#speed {
+    animation-duration: 5s;
 }
 
-.about-wrapper{
-	align-self:center;
+.about-wrapper {
+    align-self: center;
 }
 
- #me-text {
- 	font-size: 165%;
- }
 
+
+/*-----------------------------------------------------*/
+
+
+/*keyframes*/
+
+@keyframes mymove {
+    100% {
+        top: 7%;
+        left: 50%;
+        margin-top: -125px;
+        margin-left: -125px;
+        transform: scale(0.4);
+    }
+}
+
+@keyframes topdiv {
+    99% {opacity: 1;
+        top: -50vh;
+        margin-top: -50vh;
+        margin-bottom: 50vh;
+    }
+    100%{opacity: 0; 
+    	visibility: hidden; z-index: -2;}
+}
+
+@keyframes bottomdiv {
+    99% {opacity: 1;
+        top: 0%;
+        margin-top: 100vh;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes button {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes text {
+    from {
+        color: white;
+    }
+    to {
+        color: black;
+    }
+}
