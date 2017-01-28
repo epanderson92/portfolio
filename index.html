@@ -4,14 +4,15 @@
 	<meta charset="UTF-8">
 	<title>Evan Anderson</title>
 	 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-   <<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-	<body>
+	 <body onload="scrollDelay()">
+
 	<!-- nav bar -->
 		<nav>
-	    <div class="nav-wrapper">
+	    <div class="nav-wrapper port-nav">
 	      <a href="#" class="brand-logo" id="my-name">Evan Anderson</a>
 	      <ul id="nav-mobile" class="right hide-on-med-and-down">
 	        <li><a href="about.html">About Me</a></li>
@@ -23,8 +24,9 @@
 
 
     <!-- card 1, top left -->
-
-    <div class="card" id="card-1">
+  <div class="container">
+   <div class="row" id="card-top">
+    <div class="card small col m3" id="card-1">
     <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" src="assets/images/drinkWeather.jpg">
     </div>
@@ -42,7 +44,7 @@
   <!-- card 2, top right -->
 
   
-  <div class="card" id="card-2">
+  <div class="card small col m3" id="card-2">
     <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" src="assets/images/travel.jpg">
     </div>
@@ -56,10 +58,11 @@
       <p>Fill out the servey and get pared with an awesome destination! It will display a picture, info and weather of your destination. </p>
     </div>
   </div>
+  <!-- </div> -->
 
   <!-- card 3, bottom left -->
-
-    <div class="card" id="card-3">
+ <!--  <div class="row" id="card-bottom"> -->
+    <div class="card small col m3" id="card-3">
     <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" src="assets/images/crystalGame.jpg">
     </div>
@@ -75,7 +78,7 @@
 
   <!-- card 4, bottom right -->
 
-   <div class="card" id="card-4">
+   <div class="card small col m3" id="card-4">
     <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" src="assets/images/liri.jpg">
     </div>
@@ -88,26 +91,14 @@
       <p>Here is some more information about this product that is only revealed once clicked on.</p>
     </div>
   </div>
+  </div>
+</div>
 
   <!-- Footer -->
 
-      <footer class="page-footer">
+      <footer class="page-footer my-footer grey darken-3">
           <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
+            
           </div>
           <div class="footer-copyright">
             <div class="container">
@@ -124,6 +115,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script> 
+
+  <script>
+    var scroll = function(){
+
+
+               $("body").addClass("scroll");
+                document.getElementById("top").style.display = "none";
+            }
+
+            var scrollDelay = function(){
+              setTimeout(scroll, 6500);
+
+            };
+  </script>
 
 	<script type="text/javascript" src="assets/js/app.js"></script>
 	</body>
