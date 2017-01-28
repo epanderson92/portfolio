@@ -87,6 +87,7 @@ nav {
 	width: 100vw;
 	height: -50vh;
 	bottom:0;
+    z-index: 5;
 }
 
 .my-footer {
@@ -99,7 +100,8 @@ nav {
 
 #card-1 {
     width: 400px;
-    right: 7vw;
+    right: 6vw;
+    z-index: -1;
     /*margin-left: 15px;*/
     /*display: inline-block;*/
     /*margin-top: 80px;*/
@@ -108,7 +110,8 @@ nav {
 
 #card-2 {
     width: 400px;
-    left: 10vw;
+    left: 11vw;
+    z-index: -1
     /*float: right;*/
     /*margin-right: 15px;
     margin-top: 80px;*/
@@ -117,7 +120,7 @@ nav {
 
 #card-3 {
     width: 400px;
-    right: 7vw;
+    right: 6vw;
     /*margin-left: 15px;*/
     
     /*display: inline-block;
@@ -127,7 +130,7 @@ nav {
  
 #card-4 {
     width: 400px;
-    left: 10vw;
+    left: 11vw;
     /*margin-right: 15px;*/
     /*justify-content: flex-end;*/
     /*position: relative;*/
