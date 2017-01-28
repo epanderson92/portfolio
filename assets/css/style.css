@@ -13,7 +13,7 @@ body {
     height: 50vh;
     background-color: 3A3E42;
     animation: topdiv 7s forwards;
-    z-index: 998;
+    z-index: 1100;
     margin-bottom: 0 !important;
 }
 
@@ -42,13 +42,13 @@ nav {
     position: fixed;
     top: 0;
     background-color: 454A4F;
-    z-index: 5;
+    z-index:0;
     /*opacity: 1;*/
 }
 
-.port-nav{
-    z-index: 997;
-}
+/*.port-nav{
+    z-index: 0;
+}*/
 
 #about-pic {
     width: 250px;
@@ -101,7 +101,7 @@ nav {
 #card-1 {
     width: 400px;
     right: 6vw;
-    z-index: 0;
+    z-index: -1;
     /*margin-left: 15px;*/
     /*display: inline-block;*/
     /*margin-top: 80px;*/
@@ -111,7 +111,7 @@ nav {
 #card-2 {
     width: 400px;
     left: 11vw;
-    z-index: 0;
+    z-index: -1;
     /*float: right;*/
     /*margin-right: 15px;
     margin-top: 80px;*/
