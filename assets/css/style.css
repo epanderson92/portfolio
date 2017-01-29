@@ -129,6 +129,8 @@ nav {
 
 .my-footer {
     position: fixed;
+    /*margin-top: 0;*/
+    /*bottom: 0;*/
 }
 
 #my-name {
@@ -138,7 +140,7 @@ nav {
 #card-1 {
     width: 400px;
     right: 6vw;
-    z-index: -1;
+    z-index: 0;
     /*margin-left: 15px;*/
     /*display: inline-block;*/
     /*margin-top: 80px;*/
@@ -147,7 +149,7 @@ nav {
 #card-2 {
     width: 400px;
     left: 11vw;
-    z-index: -1;
+    z-index: 0;
     /*float: right;*/
     /*margin-right: 15px;
     margin-top: 80px;*/
@@ -170,6 +172,10 @@ nav {
     /*position: relative;*/
     /*margin-top: 0;*/
     bottom: 0;
+}
+
+.activator {
+    z-index: 0;
 }
 
 .bottom-pic {
@@ -201,6 +207,7 @@ nav {
 h1 {
     font-size: 700%;
 }
+
 
 
 /*-----------------------------------------------------*/
