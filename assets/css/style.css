@@ -4,8 +4,8 @@ body {
 }
 
 .scroll {
- height: auto !important;
- overflow: auto !important;
+    height: auto !important;
+    overflow: auto !important;
 }
 
 #top {
@@ -29,7 +29,7 @@ body {
 .bottom {
     width: 100vw;
     height: 50vh;
-    background-color:  3A3E42;
+    background-color: 3A3E42;
     animation: bottomdiv 7s forwards;
     top: 50%;
     z-index: 998;
@@ -42,9 +42,10 @@ nav {
     position: fixed;
     top: 0;
     background-color: 454A4F;
-    z-index:0;
+    z-index: 0;
     /*opacity: 1;*/
 }
+
 
 /*.port-nav{
     z-index: 0;
@@ -66,32 +67,68 @@ nav {
     position: fixed;
 }
 
+.contact-pics {
+    /*display: flex;*/
+    justify-content: space-around;
+    align-items: center;
+    z-index: -1;
+}
+
+#email-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 75%;
+    /*flex-direction: row;*/
+    flex-direction: space-around;
+    position: relative;
+    top:140;
+    left:50;
+}
+
+#linkedin-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 75%;
+    position: relative;
+    top:140;
+    left:150;
+    /*flex-direction: row;*/
+}
+
+#twitter-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 75%;
+    position: relative;
+    top:140;
+    left:275;
+    /*flex-direction: row;*/
+}
+
 .me-text {
     font-size: 165%;
     animation: text 2s forwards 6.6s;
     color: white;
     padding-bottom: 20px;
     z-index: -1;
-
-
 }
 
-.hiden-div{
-	margin-top: 15vh;
-	min-height: 75vh;
+.hiden-div {
+    margin-top: 15vh;
+    min-height: 75vh;
 }
 
-.page-footer{
-	background-color:  454A4F;
-	/*position: fixed;*/
-	width: 100vw;
-	height: -50vh;
-	bottom:0;
+.page-footer {
+    background-color: 454A4F;
+    /*position: fixed;*/
+    width: 100vw;
+    height: -50vh;
+    bottom: 0;
     z-index: 5;
 }
 
 .my-footer {
-	position: fixed;
+    position: fixed;
 }
 
 #my-name {
@@ -105,7 +142,6 @@ nav {
     /*margin-left: 15px;*/
     /*display: inline-block;*/
     /*margin-top: 80px;*/
-    
 }
 
 #card-2 {
@@ -115,19 +151,17 @@ nav {
     /*float: right;*/
     /*margin-right: 15px;
     margin-top: 80px;*/
-    
 }
 
 #card-3 {
     width: 400px;
     right: 6vw;
     /*margin-left: 15px;*/
-    
     /*display: inline-block;
-*/    /*flex-direction: row:*/ 
-    
+*/
+    /*flex-direction: row:*/
 }
- 
+
 #card-4 {
     width: 400px;
     left: 11vw;
@@ -138,16 +172,16 @@ nav {
     bottom: 0;
 }
 
-.bottom-pic{
+.bottom-pic {
     z-index: -1;
 }
 
-#card-top{
+#card-top {
     margin-top: 70px;
     z-index: -1;
 }
 
-#card-bottom{
+#card-bottom {
     margin-bottom: 250px;
 }
 
@@ -159,13 +193,12 @@ nav {
     align-self: center;
 }
 
-#main-container{
-	position: relative;
-    top:0;
-
+#main-container {
+    position: relative;
+    top: 0;
 }
 
-h1{
+h1 {
     font-size: 700%;
 }
 
@@ -186,17 +219,22 @@ h1{
 }
 
 @keyframes topdiv {
-    99% {opacity: 1;
+    99% {
+        opacity: 1;
         top: -50vh;
         margin-top: -50vh;
         margin-bottom: 50vh;
     }
-    100%{opacity: 0; 
-    	visibility: hidden; z-index: -2;}
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -2;
+    }
 }
 
 @keyframes bottomdiv {
-    99% {opacity: 1;
+    99% {
+        opacity: 1;
         top: 0%;
         margin-top: 100vh;
     }

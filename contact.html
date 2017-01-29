@@ -1,106 +1,72 @@
 <DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Evan Anderson</title>
-	 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+    <html lang="en">
 
-	 <body onload="scrollDelay()">
+    <head>
+        <meta charset="UTF-8">
+        <title>Evan Anderson</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
 
-	<!-- nav bar -->
-		<nav>
-	    <div class="nav-wrapper">
-	      <a href="#" class="brand-logo" id="my-name">Evan Anderson</a>
-	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	        <li><a href="about.html">About Me</a></li>
-	        <li><a href="index.html">Portfolio</a></li>
-	        <li><a href="contacts.html">Contact Me</a></li>
-	      </ul>
-	    </div>
-	  </nav>
-
-  <!-- contact -->
-   <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
-
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
-      </section>
-   </div>   
-
-
-    
-   
-
-    <!-- footer -->
-      <footer class="page-footer my-footer grey darken-3">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+    <body onload="scrollDelay()">
+        <!-- nav bar -->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo" id="my-name">Evan Anderson</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="contacts.html">Contact Me</a></li>
                 </ul>
-              </div>
             </div>
-          </div>
-          <div class="footer-copyright">
+        </nav>
+        <!-- contact -->
+        <div class="conatiner contact-pics">
+            <div class="row">
+                <div class="col m3">
+                    <img src="assets/images/mail.png" id="email-pic">
+                </div>
+
+                <div class="col m3">
+                    <a href="https://www.linkedin.com/in/evan-anderson" target="_blank"><img src="assets/images/linked.png" id="linkedin-pic"></a>
+                </div>
+
+                <div class="col m3">
+                    <a href="https://twitter.com/e_ander512" target="_blank"><img src="assets/images/twitter.png" id="twitter-pic">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="page-footer my-footer grey darken-3">
             <div class="container">
-            © 2017 Copyright Evan Anderson
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
-          </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <b>© 2017 Copyright Evan</b>
+                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
+            </div>
         </footer>
-            
-        
-<!--============================================================================================-->
-	
-	<!-- jquery/js link -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script> 
-  <script>
-    
- var scroll = function(){
+        <!--============================================================================================-->
+        <!-- jquery/js link -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        <script>
+        var scroll = function() {
 
 
-               $("body").addClass("scroll");
-                document.getElementById("top").style.display = "none";
-            }
+            $("body").addClass("scroll");
+            document.getElementById("top").style.display = "none";
+        }
 
-            var scrollDelay = function(){
-              setTimeout(scroll, 6500);
+        var scrollDelay = function() {
+            setTimeout(scroll, 1000);
 
-            };    
-  </script>
+        };
+        </script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+    </body>
 
-	<script type="text/javascript" src="assets/js/app.js"></script>
-	</body>
-
-</html>
+    </html>
