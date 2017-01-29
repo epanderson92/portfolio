@@ -54,7 +54,7 @@ nav {
 #about-pic {
     width: 250px;
     height: 250px;
-    background: red;
+    /*background: red;*/
     position: absolute;
     -webkit-animation: mymove 7s forwards;
     /* Safari 4.0 - 8.0 */
