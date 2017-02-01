@@ -1,9 +1,28 @@
-body {
+/*    body {
     height: 100%;
     overflow: hidden;
+}*/
+
+#top-scroll {
+    visibility: none;
+    top: -5000vh;
 }
 
-.scroll {
+#port-nav{
+    z-index: 500;
+}
+
+nav{
+    display:block;
+    position: fixed;
+    top: 0;
+    background-color: 454A4F;
+   /* z-index: 2;*/
+    
+    /*opacity: 1;*/
+}
+
+.scroll { 
     height: auto !important;
     overflow: auto !important;
 }
@@ -13,11 +32,14 @@ body {
     height: 50vh;
     background-color: 3A3E42;
     animation: topdiv 7s forwards;
-    z-index: 1100;
-    margin-bottom: 0 !important;
+    top: 0;
+    z-index: 998;
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-#button-back {
+/*#button-back {
     left: 50%;
     position: absolute;
     top: 50%;
@@ -28,30 +50,26 @@ body {
     z-index: 1200;
     border-radius: 100%;
     transform: translate(-75%, -75%);
+    -webkit-box-shadow: -8px 3px 20px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px 3px 20px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -8px 3px 20px -1px rgba(0, 0, 0, 0.75);
+}*/
 
-    
-    -webkit-box-shadow: -8px 3px 20px -1px rgba(0,0,0,0.75);
--moz-box-shadow: -8px 3px 20px -1px rgba(0,0,0,0.75);
-box-shadow: -8px 3px 20px -1px rgba(0,0,0,0.75);
-}
-
-#button {
+/*#button {
     left: 50%;
     position: absolute;
     top: 50%;
     width: 70px;
     height: 70px;
-    
     background-color: blue;
     z-index: 1200;
     border-radius: 100%;
     animation: throb 2s infinite;
     transform: translate(-50%, -50%);
--webkit-box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.75);
-box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.75);
-
-}
+    -webkit-box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.75);
+}*/
 
 .bottom {
     width: 100vw;
@@ -65,18 +83,16 @@ box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.75);
     margin-bottom: 0;
 }
 
-nav {
+/*nav {
     position: fixed;
     top: 0;
     background-color: 454A4F;
     z-index: 0;
-    /*opacity: 1;*/
-}
-
-
-/*.port-nav{
-    z-index: 0;
+    opacity: 1;
 }*/
+
+
+
 
 #about-pic {
     width: 250px;
@@ -91,52 +107,75 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     position: fixed;
+    z-index: 999;
 }
 
 .contact-pics {
-    /*display: flex;*/
+    display: flex;
     justify-content: space-around;
-    align-items: center;
-    z-index: -1;
+    margin-bottom: 15vh;
+    margin-top: 6vh;
+    
+    
 }
 
-#email-pic {
+.contact-images{
+    width:20vw;
+    height:20vw;
+    border-radius: 100%;
+    /*display: inline-flex;
+    justify-content: space-between;*/
+    /*position: relative;*/
+ /*   margin:0 7vw;*/
+}
+
+.col {
+    margin: 0 auto;
+}
+
+
+/*#email-pic {
     width: 250px;
     height: 250px;
     border-radius: 75%;
-    /*flex-direction: row;*/
+    flex-direction: row;
     flex-direction: space-around;
     position: relative;
-    top:140;
-    left:50;
-}
+    /*top: 140;
+    left: 50;
+}*/
 
-#linkedin-pic {
+/*#linkedin-pic {
     width: 250px;
     height: 250px;
     border-radius: 75%;
     position: relative;
-    top:140;
-    left:150;
-    /*flex-direction: row;*/
-}
+    flex-direction: space-around;
+    /*top: 140;
+    left: 150;*/
+    /*flex-direction: row;
+}*/
 
-#twitter-pic {
+/*#twitter-pic {
     width: 250px;
     height: 250px;
     border-radius: 75%;
     position: relative;
-    top:140;
-    left:275;
-    /*flex-direction: row;*/
-}
+    flex-direction: space-around;
+    /*top: 140;
+    left: 275;*/
+    /*flex-direction: row;
+}*/
 
 .me-text {
-    font-size: 165%;
+    font-size: 30px;
     animation: text 2s forwards 6.6s;
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     z-index: -1;
+    font-family: Vollkorn;
+    bottom: 40px;
+
 }
 
 .hiden-div {
@@ -159,6 +198,10 @@ nav {
     /*bottom: 0;*/
 }
 
+.top-parallax {
+    margin-bottom: 50px;
+}
+
 #my-name {
     padding-left: 15px;
 }
@@ -166,52 +209,52 @@ nav {
 #card-1 {
     width: 400px;
     right: 6vw;
-    z-index: 0;
+    z-index: 0 !important;
     /*margin-left: 15px;*/
     /*display: inline-block;*/
-    /*margin-top: 80px;*/
+    margin-top: 110px;
+    margin-bottom: 80px;
 }
 
 #card-2 {
     width: 400px;
-    left: 11vw;
+    left: 15vw;
     z-index: 0;
     /*float: right;*/
-    /*margin-right: 15px;
-    margin-top: 80px;*/
+    /*margin-right: 15px;*/
+    margin-top: 110px;
+    margin-bottom: 80px;
 }
 
 #card-3 {
     width: 400px;
     right: 6vw;
     /*margin-left: 15px;*/
-    /*display: inline-block;
-*/
+    /*display: inline-block;*/
     /*flex-direction: row:*/
+    z-index: 0;
+    margin-bottom: 110px;
 }
 
 #card-4 {
     width: 400px;
-    left: 11vw;
+    left: 15vw;
     /*margin-right: 15px;*/
     /*justify-content: flex-end;*/
     /*position: relative;*/
     /*margin-top: 0;*/
-    bottom: 0;
+    margin-bottom: 110px;
+    z-index: 0;
 }
+
 
 .activator {
     z-index: 0;
 }
 
-.bottom-pic {
+/*.bottom-pic {
     z-index: -1;
-}
-
-#card-top {
-    margin-top: 70px;
-    z-index: -1;
-}
+}*/
 
 #card-bottom {
     margin-bottom: 250px;
@@ -234,6 +277,9 @@ h1 {
     font-size: 700%;
 }
 
+p {
+    font-family: open sans;
+}
 
 
 /*-----------------------------------------------------*/
@@ -241,7 +287,8 @@ h1 {
 
 /*keyframes*/
 
-/*@keyframes mymove {
+
+@keyframes mymove {
     100% {
         top: 7%;
         left: 50%;
@@ -291,47 +338,39 @@ h1 {
     to {
         color: black;
     }
-}*/
-
-@keyframes pulse {
- 0% {
-    -webkit-transform: scale(0);
-    opacity: 0.0;
- }
- 25% {
-    -webkit-transform: scale(0);
-    opacity: 0.1;
- }
- 50% {
-    -webkit-transform: scale(0.1);
-    opacity: 0.3;
- }
- 75% {
-    -webkit-transform: scale(0.5);
-    opacity: 0.5;
- }
- 100% {
-    -webkit-transform: scale(1);
-    opacity: 0.0;
- }
-
- /*===========queries================*/
-
-  @media only screen and (max-width: 1224px) {
-    
-#about-pic{
- height: 150px;
- width: 150px;
 }
 
-}
-
-
- @media only screen and (max-width: 500px) {
-    
-#about-pic{
- height: 150px;
- width: 150px;
-}
-
-}
+/*@keyframes pulse {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0.0;
+    }
+    25% {
+        -webkit-transform: scale(0);
+        opacity: 0.1;
+    }
+    50% {
+        -webkit-transform: scale(0.1);
+        opacity: 0.3;
+    }
+    75% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0.0;
+    }*/
+    /*===========queries================*/
+    @media only screen and (max-width: 1111px) {
+        #about-pic {
+            height: 75px;
+            width: 75px;
+        }
+    }
+    @media only screen and (max-width: 1224px) {
+        #about-pic {
+            height: 150px;
+            width: 150px;
+        }
+    }
