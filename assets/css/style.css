@@ -1,7 +1,11 @@
-/*    body {
+    body {
     height: 100%;
     overflow: hidden;
-}*/
+}
+
+.gone {
+  display: none !important;
+}
 
 #top-scroll {
     visibility: none;
@@ -17,27 +21,41 @@ nav{
     position: fixed;
     top: 0;
     background-color: 454A4F;
+    font-weight: 100;
    /* z-index: 2;*/
-    
+
     /*opacity: 1;*/
 }
 
-.scroll { 
+.brand-logo {
+    padding-bottom: 60px;
+}
+
+.scroll {
     height: auto !important;
     overflow: auto !important;
 }
 
-#top {
+
+/*.top {
     width: 100vw;
     height: 50vh;
     background-color: 3A3E42;
-    animation: topdiv 7s forwards;
+    animation: topdiv 7s linear forwards;
     top: 0;
     z-index: 998;
     position: absolute;
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.topAfter {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -2;
+}*/
+
+
 
 /*#button-back {
     left: 50%;
@@ -71,7 +89,7 @@ nav{
     box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.75);
 }*/
 
-.bottom {
+/*.bottom {
     width: 100vw;
     height: 50vh;
     background-color: 3A3E42;
@@ -83,6 +101,10 @@ nav{
     margin-bottom: 0;
 }
 
+.bottomAfter {
+  opacity: 0;
+  visibility: hidden;
+}*/
 /*nav {
     position: fixed;
     top: 0;
@@ -94,34 +116,68 @@ nav{
 
 
 
-#about-pic {
-    width: 250px;
+.about-pic {
+    /*width: 250px;
     height: 250px;
-    /*background: red;*/
+    /background: red;
     position: absolute;
-    -webkit-animation: mymove 7s forwards;
-    /* Safari 4.0 - 8.0 */
+    -webkit-animation: mymove 7s forwards,;
+     Safari 4.0 - 8.0
     animation: mymove 7s forwards;
     border-radius: 100%;
     top: 25%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
+    top: 7%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin-top: -125px;
+    margin-left: -125px;
+    transform: scale(0.4);
+
     position: fixed;
     z-index: 999;
 }
+
+/*.about-picAfter {
+  top: 7%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+
+
+  width: 100px;
+  height: 100px;
+  /*background: red;*/
+  /*position: absolute;*/
+
+  /* Safari 4.0 - 8.0 */
+
+  /*border-radius: 100%;
+  display: flex;
+  align-self: center;*/
+  /*-webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+
+  /*position: fixed;
+  z-index: 999;
+}*/
 
 .contact-pics {
     display: flex;
     justify-content: space-around;
     margin-bottom: 15vh;
     margin-top: 6vh;
-    
-    
+
+
 }
 
 .contact-images{
-    width:20vw;
-    height:20vw;
+    width:15vw;
+    height:15vw;
     border-radius: 100%;
     /*display: inline-flex;
     justify-content: space-between;*/
@@ -167,16 +223,28 @@ nav{
     /*flex-direction: row;
 }*/
 
-.me-text {
+.meText {
     font-size: 30px;
-    animation: text 2s forwards 6.6s;
-    color: white;
+    /*animation: text 2s forwards 2s;
+    -webkit-animation: text 2s forwards;*/
+    color: black;
     padding-bottom: 10px;
     z-index: -1;
-    font-family: Vollkorn;
+  /*  font-family: Vollkorn;*/
     bottom: 40px;
 
 }
+
+/*.meTextAfter {
+  font-size: 30px !important;
+  animation: text 2s forwards !important;
+  -webkit-animation: text 2s forwards;
+  color: white;
+  padding-bottom: 10px;
+  z-index: -1;
+  font-family: Vollkorn;
+  bottom: 40px;
+}*/
 
 .hiden-div {
     margin-top: 15vh;
@@ -193,7 +261,7 @@ nav{
 }
 
 .my-footer {
-    position: fixed;
+    font-weight: 100;
     /*margin-top: 0;*/
     /*bottom: 0;*/
 }
@@ -202,9 +270,12 @@ nav{
     margin-bottom: 50px;
 }
 
-#my-name {
-    padding-left: 15px;
-}
+/*.cardBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+}*/
 
 #card-1 {
     width: 400px;
@@ -218,7 +289,7 @@ nav{
 
 #card-2 {
     width: 400px;
-    left: 15vw;
+    left: 22vw;
     z-index: 0;
     /*float: right;*/
     /*margin-right: 15px;*/
@@ -238,13 +309,21 @@ nav{
 
 #card-4 {
     width: 400px;
-    left: 15vw;
+    left: 22vw;
     /*margin-right: 15px;*/
     /*justify-content: flex-end;*/
     /*position: relative;*/
     /*margin-top: 0;*/
     margin-bottom: 110px;
     z-index: 0;
+}
+
+#card-4-description{
+    padding-top: 10px;
+}
+
+#card-3-description{
+    margin-top: 10px;
 }
 
 
@@ -275,10 +354,13 @@ nav{
 
 h1 {
     font-size: 700%;
+    font-weight: 100;
 }
 
 p {
-    font-family: open sans;
+    font-family: roboto;
+    text-indent: 1em;
+    font-weight: 100;
 }
 
 
@@ -288,7 +370,7 @@ p {
 /*keyframes*/
 
 
-@keyframes mymove {
+/*@keyframes mymove {
     100% {
         top: 7%;
         left: 50%;
@@ -298,7 +380,32 @@ p {
     }
 }
 
+@-webkit-keyframes mymove {
+    100% {
+        top: 7%;
+        left: 50%;
+        margin-top: -125px;
+        margin-left: -125px;
+        -webkit-transform: scale(0.4);
+        transform: scale(0.4);
+    }
+}
+
 @keyframes topdiv {
+    99% {
+        opacity: 1;
+        top: -50vh;
+        margin-top: -50vh;
+        margin-bottom: 50vh;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -2;
+    }
+}
+
+@-webkit-keyframes topdiv {
     99% {
         opacity: 1;
         top: -50vh;
@@ -324,7 +431,26 @@ p {
     }
 }
 
+@-webkit-keyframes bottomdiv {
+    99% {
+        opacity: 1;
+        top: 0%;
+        margin-top: 100vh;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 @keyframes button {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes button {
     100% {
         opacity: 0;
         visibility: hidden;
@@ -340,32 +466,51 @@ p {
     }
 }
 
+@-webkit-keyframes text {
+    from {
+        color: white;
+    }
+    to {
+        color: black;
+    }
+}*/
+
 /*@keyframes pulse {
-    0% {
-        -webkit-transform: scale(0);
-        opacity: 0.0;
-    }
-    25% {
-        -webkit-transform: scale(0);
-        opacity: 0.1;
-    }
-    50% {
-        -webkit-transform: scale(0.1);
-        opacity: 0.3;
-    }
-    75% {
-        -webkit-transform: scale(0.5);
-        opacity: 0.5;
-    }
-    100% {
-        -webkit-transform: scale(1);
-        opacity: 0.0;
-    }*/
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    transform-origin: center center;
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    transform-origin: bottom right;
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    transform-origin: center;
+  }
+}
     /*===========queries================*/
     @media only screen and (max-width: 1111px) {
         #about-pic {
             height: 75px;
             width: 75px;
+
+        }
+        .right{
+          display: none;
+        }
+
+        .my-name{
+          display: none;
+        }
+
+        .meText {
+          text-align: center;
         }
     }
     @media only screen and (max-width: 1224px) {

@@ -1,136 +1,215 @@
 <DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Evan Anderson</title>
-	 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+    <html lang="en">
 
-	 <body onload="scrollDelay()">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Evan Anderson</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/materialize.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
 
-	<!-- nav bar -->
-		<nav>
-	    <div class="nav-wrapper port-nav">
-	      <a href="#" class="brand-logo" id="my-name">Evan Anderson</a>
-	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	        <li><a href="about.html">About Me</a></li>
-	        <li><a href="index.html">Portfolio</a></li>
-	        <li><a href="contact.html">Contact Me</a></li>
-	      </ul>
-	    </div>
-	  </nav>
-
-
-    <!-- card 1, top left -->
-  <div class="container">
-   <div class="row">
-    <div class="card small col s3" id="card-1">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="assets/images/drinkWeather.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Tipsy Weather<i class="material-icons right">Info</i></span>
-      <p><a href="http://tipsyweather.herokuapp.com/" target="_blank">Try it out!</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Tipsy Weather<i class="material-icons right">close</i></span>
-      <br>
-      <p>Put your location in and get a drink sugestion based on the weather.</p>
-    </div>
-  </div>
-
-  <!-- card 2, top right -->
-
-  
-  <div class="card small col s3" id="card-2">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="assets/images/travel.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Travel Buddy<i class="material-icons right">Info</i></span>
-      <p><a href="https://mighty-springs-39390.herokuapp.com/" target="_blank">Try it Out!</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Travel Buddy<i class="material-icons right">close</i></span>
-      <br>
-      <p>Fill out the servey and get pared with an awesome destination! It will display a picture, info and weather of your destination. </p>
-    </div>
-  </div>
-  <!-- </div> -->
-
-  <!-- card 3, bottom left -->
- <!--  <div class="row" id="card-bottom"> -->
-    <div class="card small col s3" id="card-3">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator bottom-pic" src="assets/images/crystalGame.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Crystal Selector<i class="material-icons right">Info</i></span>
-      <p><a href="https://arcane-cliffs-40856.herokuapp.com/" target="_blank">Try it Out!</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Crystal Selector<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-
-  <!-- card 4, bottom right -->
-
-   <div class="card small col s3" id="card-4">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator bottom-pic" src="assets/images/liri.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Liri App<i class="material-icons right">Info</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-  </div>
-</div>
-
-  <!-- Footer -->
-
-      <footer class="page-footer my-footer grey darken-3">
-          <div class="container">
-            
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            <b>© 2017 Copyright Evan</b>
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    <body onload="scrollDelay()">
+        <div id="top-scroll"></div>
+        <!-- nav bar -->
+        <nav id="port-nav">
+            <div class="nav-wrapper">
+                <a href="#top-scroll" class="brand-logo" class="my-name">Evan Anderson</a>
+                <ul id="nav-mobile" class="right">
+                    <li><a href="#top-scroll">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact-word">Contact Me</a></li>
+                </ul>
             </div>
-          </div>
+        </nav>
+        <!-- opening curtan/profile pic -->
+        <div class="top"></div>
+        <img class="about-pic" src="assets/images/evan.jpg" class="pulse">
+        <div class="bottom">
+        </div>
+        <div id="button-back"></div>
+        <div id="button"></div>
+        <!-- about me text -->
+        <div class="container hiden-div">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class="meText">My name is Evan Anderson. I am a native Austinite which apparently is the equivalent of seeing a unicorn these days. I attended the UT Coding Boot Camp where I learned technologies and skills and am now a full stack web developer with an emphasis on the front end.</p>
+            <br>
+            <br>
+            <br>
+            <p class="meText">Technologies I know: HTML5, CSS3, Javascript, jQuery, Node.js, Express.js, AJAX, Handlebars.js, JSON, SQL, MySQL, MongoDB, Github and Git.</p>
+            <br>
+            <!-- <p class="me-text"></p> -->
+        </div>
+        <!-- paralax -->
+        <div class="parallax-container">
+            <div class="parallax"><img src="assets/images/tech.jpg"></div>
+        </div>
+        <!-- card 1, top left -->
+        <div class="cardBox container" id="portfolio">
+            <div class="row">
+                <div class="card small col s3" id="card-1">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/drinkWeather.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Tipsy Weather<i class="material-icons right">Info</i></span>
+                        <p><a href="http://tipsyweather.herokuapp.com/" target="_blank">Try it out!</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Tipsy Weather<i class="material-icons right">close</i></span>
+                        <br>
+                        <p>Put your location in and get a drink sugestion based on the weather.</p>
+                    </div>
+                </div>
+                <!-- card 2, top right -->
+                <div class="card small col s3" id="card-2">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/travel.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Travel Buddy<i class="material-icons right">Info</i></span>
+                        <p><a href="https://mighty-springs-39390.herokuapp.com/" target="_blank">Try it Out!</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Travel Buddy<i class="material-icons right">close</i></span>
+                        <br>
+                        <p>Fill out the servey and get pared with an awesome destination! It will display a picture, info and weather of your destination. </p>
+                    </div>
+                </div>
+                <!-- </div> -->
+                <!-- card 3, bottom left -->
+                <!--  <div class="row" id="card-bottom"> -->
+                <div class="card small col s3 bottomCard" id="card-3">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator bottom-pic" src="assets/images/crystalGame.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Crystal Selector<i class="material-icons right">Info</i></span>
+                        <p><a href="https://arcane-cliffs-40856.herokuapp.com/" target="_blank">Try it Out!</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Crystal Selector<i class="material-icons right">close</i></span>
+                        <p id="card-3-description"> In this game a random number will be generated and you will match it or surpass it by selecting the crystals.</p>
+                    </div>
+                </div>
+                <!-- card 4, bottom right -->
+                <div class="card small col s3" id="card-4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator bottom-pic" src="assets/images/liri.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Liri App<i class="material-icons right">Info</i></span>
+                        <p><a href="#">GUI coming soon</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Liri App<i class="material-icons right">close</i></span>
+                        <p id="card-4-description">This app will allow you to see tweets from your twitter page in the command line. It makes you feel like a hacker! </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- parallax -->
+        <div class="parallax-container top-parallax">
+            <div class="parallax"><img src="assets/images/shield.jpg"></div>
+        </div>
+        <!-- contact -->
+        <div id="main-container" class="container">
+            <section class="main-section">
+                <h1 id="contact-word">Contact</h1>
+                <form method="POST" action="http://formspree.io/evanpanderson1@gmail.com">
+                    <input type="email" name="email" placeholder="Your email">
+                    <textarea name="message" placeholder="Your message"></textarea>
+                    <button type="submit" class="button-middle">Send</button>
+                </form>
+            </section>
+        </div>
+        <div class="conatiner">
+            <div class="row contact-pics">
+                <div class="col">
+                    <a href="https://github.com/epanderson92" target="_blank"> <img src="assets/images/github.png" class="contact-images"></a>
+                </div>
+                <div class="col">
+                    <a href="https://www.linkedin.com/in/evan-anderson" target="_blank"><img src="assets/images/linked.png" class="contact-images"></a>
+                </div>
+                <div class="col">
+                    <a href="https://twitter.com/e_ander512" target="_blank"><img src="assets/images/twitter.png" class="contact-images">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="page-footer my-footer grey darken-3">
+            <div class="container">
+            </div>
+            <div class="footer-copyright center-align">
+                <div class="container">
+                    © 2017 Copyright Evan Anderson
+                    <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+                </div>
+            </div>
         </footer>
- 
-        
-<!--===================================================================================================-->
-	
-	<!-- jquery/js link -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script> 
-
-  <script>
-    var scroll = function(){
+        <!--============================================================================================-->
+        <!-- jquery/js link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        <script>
+        var scroll = function() {
 
 
-               $("body").addClass("scroll");
-                document.getElementById("top").style.display = "none";
-            }
+            $("body").addClass("scroll");
+            document.getElementById("top").style.display = "none";
+        }
 
-            var scrollDelay = function(){
-              setTimeout(scroll, 1000);
+        var scrollDelay = function() {
+            setTimeout(scroll, 100);
 
-            };
-  </script>
+        };
 
-	<script type="text/javascript" src="assets/js/app.js"></script>
-	</body>
+        $(document).ready(function() {
+            $('html,body').localScroll({
+                duration: 800
+            });
+        });
 
-</html>
+        $(document).ready(function() {
+            $(this).scrollTop(0);
+            // var date = new Date();
+            // var minutes = 30;
+            // date.setTime(date.getTime() + (minutes * 60 * 1000));
+            // $.cookie("pop", { expires: date });
+        //     if ($.cookie("pop") !== null) {
+        //      $(".bottom").attr('class', 'bottomAfter');
+        //      $(".top").attr('class', 'topAfter');
+        //      $(".about-pic").attr('class', 'about-picAfter')
+        //      $("body").addClass("scroll");
+        //      $(".meText").attr('class', 'meTextAfter');
+        //      $.cookie("pop", "2");
+        //  }
+         if ( $(window).width() < 739) {
+              $(".my-name").addClass("gone");
+              $(".brand-logo").addClass("gone");
+              $(".right").addClass("gone");
+
+        }
+        });
+
+
+
+        </script>
+        <script src="assets/js/jquery.localScroll.js" type="text/javascript"></script>
+        <script src="assets/js/jquery.scrollTo.js" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/cookie.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+    </body>
+
+    </html>
